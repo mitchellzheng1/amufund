@@ -1,0 +1,66 @@
+:root {
+  --bg: #f3b45d;
+  --text: #2a1a0e;
+  --link: #2c6bd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fae4bf 0%, #f6c97c 60%, #f1a84d 100%);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 165px 40px 80px;
+}
+
+.copy {
+  width: min(550px, calc(100vw - 80px));
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.copy p {
+  margin: 0 0 16px;
+}
+
+.copy ul {
+  margin: 6px 0 18px 18px;
+  padding: 0;
+}
+
+.copy li {
+  margin-bottom: 3px;
+}
+
+.footer {
+  margin-top: 120px;
+  font-size: 15px;
+  text-align: left;
+  width: min(550px, calc(100vw - 80px));
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 130px 60px 70px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}
